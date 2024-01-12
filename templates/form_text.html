@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Assets/Css/style.css') }}">
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='images/image.jpg') }}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* Autres styles de fond si nécessaire */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="/welcome" class="header-link">Home</a>
+        <a href="/" class="header-link">Start page</a>
+    </div>
+    <h1>Sentiment Analysis</h1>
+
+        <form action="/process_text" method="POST">
+            <div class="comment-label">
+                <label for="comment">Comment</label>
+            </div>
+            <textarea id="comment" name="comment" rows="4" placeholder="Here..." cols="50"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+
+    {% if emotion_percentages %}
+    <div class="emotion-percentages">
+        <h2>Emotion Percentage Results:</h2>
+        <ul>
+            {% for emotion, percentage in emotion_percentages.items() %}
+                <li>{{ emotion }} : {{ percentage|round(2) }}%</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+
+    <br>
+
+    <div class="graph-image">
+        <h2>Emotion Chart:</h2>
+        <img src="{{ url_for('static', filename='graph.png') }}" alt="graph">
+    </div>
+    {% endif %}
+
+</body>
+</html>

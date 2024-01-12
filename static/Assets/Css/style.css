@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url("{{ url_for('static', filename='images/image.jpg') }}");
+    background-size: cover;
+}
+
+.header {
+    text-align: right;
+    margin: 10px;
+}
+
+.header-link {
+    display: inline-block;
+    background-color: #0074d9;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 20px; /* Crée une base arrondie */
+}
+
+.header-link:hover {
+    background-color: #0056b3;
+}
+
+h1 {
+ color: #8B4513; /* Couleur marron en code hexadécimal */
+   font-family: 'Pacifico', cursive;
+    font-size: 36px; /* Ajustez la taille de la police selon vos préférences */
+    margin: 20px 0;
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 10px ;
+}
+
+textarea {
+    width: 100%;
+    padding: 70px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Couleur de fond verte */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 20px; /* Crée une base arrondie */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Couleur de fond verte au survol */
+}
+/* ... Vos styles CSS précédents ... */
+
+.comment-label {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.comment-label label {
+    position: relative;
+    font-weight: bold;
+}
+
+.comment-label label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: beige;
+}
+
+.comment-label label::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 1px;
+    background-color: beige;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.centered-image {
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+}
+/* ... Vos styles CSS précédents ... */
+/* Réinitialisation des styles et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.en-savoir-plus {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.en-savoir-plus h1 {
+    font-size: 36px;
+    margin: 0 0 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #333;
+    text-align: center;
+}
+
+.en-savoir-plus p {
+    margin-bottom: 20px;
+}
+
+.en-savoir-plus ul {
+    list-style: none;
+}
+
+.en-savoir-plus ul li::before {
+    content: "\2022"; /* Utilisation d'un caractère de puce personnalisé */
+    margin-right: 10px;
+    color: #333;
+}
+
+footer {
+
+    color: #fff;
+    padding: 20px;
+    font-size: 18px;
+}
+
+
+/* Styles CSS pour la page d'accueil */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('image.jpg');
+    background-size: cover;
+}
+
+.homepage {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #8B4513;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice-button {
+    background-color: #0074d9;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.choice-button:hover {
+    background-color: #0056b3;
+}
+
+/* ... Ajoutez d'autres styles CSS au besoin ... */
+

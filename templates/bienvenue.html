@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Assets/Css/style.css') }}">
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='images/image.jpg') }}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* Autres styles de fond si nécessaire */
+        }
+    </style>
+</head>
+<body>
+    <div class="homepage">
+        <h1>Welcome</h1>
+        <p>Choose what you want to analyze:</p>
+        <div class="choices">
+            <button class="choice-button" onclick="window.location.href='/analyze_text'">Analyze Text</button>
+            <button class="choice-button" onclick="window.location.href='/analyze_sentence'">Analyze Sentence</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+ fearless: 20.00%
+ adequate: 20.00%
+ angry: 20.00%
+ attracted: 20.00%
+ fearful: 20.00%

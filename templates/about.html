@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Assets/Css/style.css') }}">
+    <title>Sentiment Analysis - About</title>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='images/image.jpg') }}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* Autres styles de fond si nécessaire */
+        }
+    </style>
+</head>
+<body>
+    <section class="en-savoir-plus">
+        <h1>En savoir plus sur nous</h1>
+        <p>L'analyse des sentiments est une technique qui permet de déterminer le ton général d'un texte, qu'il s'agisse de commentaires, de critiques ou de publications sur les réseaux sociaux. Elle peut être utilisée pour comprendre comment les gens perçoivent un produit, une entreprise ou un sujet donné.</p>
+
+        <p>Les principales utilisations de l'analyse des sentiments incluent :</p>
+        <ul>
+            <li>Évaluation de la satisfaction client.</li>
+            <li>Surveillance de la réputation de la marque.</li>
+            <li>Identification des tendances du marché.</li>
+            <li>Évaluation des réactions aux campagnes marketing.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Sentiment Analysis</p>
+    </footer>
+</body>
+</html>

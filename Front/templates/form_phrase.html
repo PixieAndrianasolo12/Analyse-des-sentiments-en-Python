@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Assets/Css/style.css') }}">
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='images/image.jpg') }}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* Autres styles de fond si nécessaire */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="/welcome" class="header-link">Home</a>
+        <a href="/" class="header-link">Start page</a>
+    </div>
+
+    <h1>Sentiment Analysis</h1>
+
+    {% if sentiment_result %}
+        <h3>Your message: {{ texte_saisi }}</h3>
+        <br>
+
+    <p>Sentiment Analysis Result: " <strong>{{ sentiment_result }}</strong> "</p>
+    {% endif %}
+
+    <form action="/prozess_sentence" method="POST">
+       <br>
+        <div class="comment-label">
+            <label for="comment">Comments</label>
+        </div>
+        <textarea id="comment" name="comment" rows="4" placeholder="Here..." cols="50"></textarea>
+        <br>
+        <input type="submit" value="See the Result">
+    </form>
+
+
+    <footer>
+        <img src="{{ url_for('static', filename='Assets/Images/image3.jpg') }}" alt="image3" class="centered-image">
+    </footer>
+
+</body>
+</html>
